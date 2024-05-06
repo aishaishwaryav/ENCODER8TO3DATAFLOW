@@ -1,5 +1,3 @@
-![image](https://github.com/aishaishwaryav/ENCODER8TO3DATAFLOW/assets/151565589/a5114100-e0e7-445b-8b62-5a996300ae4e)### ENCODER 8TO3 DATAFLOW Modelling
-
 **AIM:**
 
 To implement  Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables
