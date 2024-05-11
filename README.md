@@ -34,11 +34,21 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 ```
-1.Type the program in Quartus software.
-2.Compile and run the program.
-3.Generate the RTL schematic and save the logic diagram.
-4.Create nodes for inputs and outputs to generate the timing diagram.
-5.For different input combinations generate the timing diagram.
+STEP-1 Define Inputs and Outputs
+
+STEP-2 Understand the Encoder Functionality
+
+STEP-3 Design the Functional Table
+
+STEP-4 Write Verilog Code
+
+STEP-5 Verify Verilog Code
+
+STEP-6 Synthesize the Design
+
+STEP-7 Implement in FPGA
+
+STEP-8 Verify Functionality on FPGA
 ```
 
 /* write all the steps invloved */
@@ -46,25 +56,25 @@ Figure 02  Encoder 8 * 3
 **PROGRAM**
 ```
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
-module encoder_top(din, a, b, c); 
-input [0:7] din; 
-output a,b,c; 
-assign a=din[4] | din[5] | din[6] | din[7]; 
-assign b=din[2] | din[3] | din[6] | din[7];
-assign c=din[2] | din[4] | din[6] | din[7];
+module Exp_05(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+assign a0=d1|d3|d5|d7;
+assign a1=d2|d3|d6|d7;
+assign a2=d4|d5|d6|d7;
 endmodule
-
 Developed by: AISHWARYA V RegisterNumber:212223220003*/
 ```
 
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
-![image](https://github.com/aishaishwaryav/ENCODER8TO3DATAFLOW/assets/151565589/e48311fa-d6df-41b4-acc7-721797a04a2e)
+![image](https://github.com/aishaishwaryav/ENCODER8TO3DATAFLOW/assets/151565589/ea353777-f8e5-4ace-8ee8-accffda364b3)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
-![image](https://github.com/aishaishwaryav/ENCODER8TO3DATAFLOW/assets/151565589/35409f26-a111-4e1e-bc0f-7f27c6febe88)
+![image](https://github.com/aishaishwaryav/ENCODER8TO3DATAFLOW/assets/151565589/61137886-9357-4320-9614-f6ce10aa64b6)
+
 
 **RESULTS**
 The code is executed successfully
